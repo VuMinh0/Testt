@@ -10,6 +10,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <form action="enroll" method="post">
+            <div>Student Name: <input type="text" name="name"/></div> 
+            
+            <div>
+                Financial Source: <input type="radio" name="source" value="Government" /> Government
+                <input type="radio" name="source" value="Grant" /> Grant
+                <input type="radio" name="source" value="Self-Sponsor" /> Self-Sponsor
+            </div>
+
+            <div>Level: <select name="level">
+                    <option value="Bsc">Bsc</option>
+                    <option value="Master">Master</option>
+                    <option value="PhD">PhD</option>
+                </select></div>
+
+            <div>   DOE:<input type="date" name="doe"></div>
+
+<!--            <div><input type="Save"></div>-->
+            <div><button>Save</button></div>
+
+        </form>
+
     </body>
 </html>
